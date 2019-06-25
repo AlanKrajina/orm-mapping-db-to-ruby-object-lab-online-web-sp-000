@@ -82,7 +82,7 @@ def self.first_X_students_in_grade_10(number)
          sql = <<-SQL
       SELECT *
       FROM students
-      WHERE grade = 10
+      WHERE grade = self.grade
     SQL
  
     DB[:conn].execute(sql).map do |row|
