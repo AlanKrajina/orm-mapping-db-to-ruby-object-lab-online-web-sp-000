@@ -101,7 +101,7 @@ def self.first_X_students_in_grade_10(number)
       SELECT *
       FROM students
       WHERE grade = 10
-      ORDER BYDESC
+      ORDER BY grade DESC
       LIMIT 1 
     SQL
  
