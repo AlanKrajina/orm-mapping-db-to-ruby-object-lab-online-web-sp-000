@@ -100,8 +100,8 @@ def self.first_X_students_in_grade_10(number)
          sql = <<-SQL
       SELECT *
       FROM students
-      ORDER BY(id) 
-      DESC LIMIT 1
+      WHERE grade = 10
+      GROUP BY(id)
     SQL
  
     DB[:conn].execute(sql).map do |row|
