@@ -100,7 +100,7 @@ def self.first_X_students_in_grade_10(number)
          sql = <<-SQL
       SELECT *
       FROM students
-      ORDER BY(net_worth) 
+      ORDER BY(id) 
       DESC LIMIT 1
     SQL
  
