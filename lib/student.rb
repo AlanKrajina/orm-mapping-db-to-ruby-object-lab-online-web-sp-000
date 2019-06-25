@@ -63,7 +63,7 @@ class Student
   
   
   
-def self.first_X_students_in_grade_10(number)
+  def self.first_X_students_in_grade_10(number)
          sql = <<-SQL
       SELECT *
       FROM students
@@ -75,6 +75,7 @@ def self.first_X_students_in_grade_10(number)
       self.new_from_db(row)
     end   
   end    
+  
   
   
   
